@@ -25,7 +25,7 @@ ldap {
 
 	#  Administrator account for searching and possibly modifying.
 	#  If using SASL + KRB5 these should be commented out.
-	identity = LDAP_USERNAME
+	identity = 'LDAP_USERNAME'
 	password = LDAP_PASSWORD
 
 	#  Unless overridden in another section, the dn from which all
