@@ -1,16 +1,9 @@
 version: '3.2'
 services:
   unifi-freeradius-ldap:
-    image: haor/freeradius-google-ldap:latest
-    # uncomment this line for debug
-    #command: freeradius -X
+    image: radius-test:latest
     env_file: env/freeradius.env
-    build:
-      dockerfile: Dockerfile
-      context: .
-    image: haor/freeradius-google-ldap:latest
-    #command: -X
-    env_file: env/freeradius.env
+    command: freeradius -X
     volumes:
       - type: bind
         source: ./certs

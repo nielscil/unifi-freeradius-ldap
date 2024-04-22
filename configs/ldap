@@ -30,7 +30,7 @@ ldap {
 
 	#  Unless overridden in another section, the dn from which all
 	#  searches will start from.
-	base_dn = 'dc=BASE_DOMAIN,dc=DOMAIN_EXTENSION'
+	base_dn = 'BASE_DN'
 
 	#
 	#  You can run the 'ldapsearch' command line tool using the
