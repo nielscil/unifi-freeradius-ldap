@@ -22,8 +22,9 @@ In order to successfully run the container, following environment variables are 
 - `ACCESS_ALLOWED_CIDR` : The CIDR (e.g. 192.168.1.1/24) which is allowed access to the freeradius server. This will probably be the IP range of your Wifi Access Points.
 - `BASE_DOMAIN`: The first part of your domain name used in the Google suite: `example` if your domain name is `example.com`
 - `DOMAIN_EXTENSTION`: The last part of your domain name used in the Google suite: `com` if your domain name is `example.com`
-- `GOOGLE_LDAP_USERNAME`: The username Google gave you when configuring the Client credentials
-- `GOOGLE_LDAP_PASSWORD`: The password Google gave you when configuring the Client credentials 
+- `LDAP_SERVER`: The LDAP server url
+- `LDAP_USERNAME`: The username Google gave you when configuring the Client credentials
+- `LDAP_PASSWORD`: The password Google gave you when configuring the Client credentials 
 - `SHARED_SECRET`: The shared secret needed to be able to talk to the FreeRADIUS server
 
 In order to run the container also needs the directory where the certificates you received (and extracted) from Google are located. These files need to be mounted to the `/certs` folder and renamed to `ldap-client.crt` and `ldap-client.key` respectively.
