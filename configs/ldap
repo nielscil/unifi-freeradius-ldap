@@ -16,7 +16,7 @@ ldap {
 	#  - ldaps:// (LDAP over SSL)
 	#  - ldapi:// (LDAP over Unix socket)
 	#  - ldapc:// (Connectionless LDAP)
-	server = 'ldaps://ldap.google.com'
+	server = 'LDAP_SERVER'
 #	server = 'ldap.rrdns.example.org'
 #	server = 'ldap.rrdns.example.org'
 
@@ -25,8 +25,8 @@ ldap {
 
 	#  Administrator account for searching and possibly modifying.
 	#  If using SASL + KRB5 these should be commented out.
-	identity = 'GOOGLE_LDAP_USERNAME'
-	password = GOOGLE_LDAP_PASSWORD
+	identity = 'LDAP_USERNAME'
+	password = LDAP_PASSWORD
 
 	#  Unless overridden in another section, the dn from which all
 	#  searches will start from.
