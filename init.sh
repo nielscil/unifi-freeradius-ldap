@@ -15,8 +15,8 @@ sed -i "s|SHARED_SECRET|$SHARED_SECRET|g" /etc/freeradius/clients.conf
 sed -i "s|BASE_DOMAIN|$BASE_DOMAIN|g" /etc/freeradius/proxy.conf
 
 sed -i "s|LDAP_SERVER|$LDAP_SERVER|g" /etc/freeradius/mods-available/ldap
-sed -i "s|LDAP_PASSWORD|$GOOGLE_LDAP_PASSWORD|g" /etc/freeradius/mods-available/ldap
-sed -i "s|LDAP_USERNAME|$GOOGLE_LDAP_USERNAME|g" /etc/freeradius/mods-available/ldap
+sed -i "s|LDAP_PASSWORD|$LDAP_PASSWORD|g" /etc/freeradius/mods-available/ldap
+sed -i "s|LDAP_USERNAME|$LDAP_USERNAME|g" /etc/freeradius/mods-available/ldap
 sed -i "s|BASE_DN|$BASE_DN|g" /etc/freeradius/mods-available/ldap
 
 # Handle the certs
